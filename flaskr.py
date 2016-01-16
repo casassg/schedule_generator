@@ -5,6 +5,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
 import config
 from contextlib import closing
 
+
 # create our little application :)
 
 app = Flask(__name__)
