@@ -15,10 +15,12 @@ class Classes:
 
 class Grup:
     
-    def __init__(self,gr,clas,asig):
-        self.classes= clas
+    def __init__(self,gr,asig):
+        self.classes= []
         self.grup=gr
         self.ass= asig
+    def setClasses(self,cl):
+        self.classes=cl
     def getGrup(self):
         return self.grup
     def getClasses(self):
@@ -28,8 +30,10 @@ class Grup:
     
 class Assignatura:
     
-    def __init__(self,nomi,gr):
+    def __init__(self,nomi):
         self.nom=nomi
+        self.grups=[]
+    def setGrups(self,gr):
         self.grups=gr
     def getNom(self):
         return self.nom

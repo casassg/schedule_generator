@@ -13,3 +13,4 @@ def connect_db():
         host=result.hostname
     )
     return connection
+
