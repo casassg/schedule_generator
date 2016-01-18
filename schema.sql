@@ -14,8 +14,8 @@ create TABLE grup (
 );
 
 create TABLE classe (
-    inici date not null,
-    fi date not null,
+    inici time not null,
+    fi time not null,
     grup integer not null,
     dia varchar(20) not null,
     assig varchar(255) not null,

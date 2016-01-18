@@ -161,32 +161,32 @@ def mostrar_json(sol):
     dic['solucio']= sol_json
     return (dic,json.JSONEncoder(dic) )
 
-c1=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dilluns')
-c2=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dimarts')
-c3=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dijous')
-
-g1=Grup(1,[c1,c2,c3],'a1')
-
-
-c4=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dilluns')
-c5=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dimarts')
-c6=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dijous')
-
-
-g2=Grup(2,[c4,c5,c6],'a1')
-
-
-a1=Assignatura('a1',[g1,g2])
-    
-
-
-g3=Grup(1,[c1,c2,c3],'a2')
-g4=Grup(2,[c4,c5,c6],'a2')
-
-a2=Assignatura('a2',[g3,g4])
-so= []
-#print "HII"
-#print type(so)
-h1=donemhorari([a1,a2],generadorafuncions(5),[])
-
-(d1,j1) = mostrar_json(h1)
+# c1=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dilluns')
+# c2=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dimarts')
+# c3=Classes(datetime.time(13,0,0),datetime.time(15,0,0),'Dijous')
+#
+# g1=Grup(1,[c1,c2,c3],'a1')
+#
+#
+# c4=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dilluns')
+# c5=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dimarts')
+# c6=Classes(datetime.time(16,0,0),datetime.time(18,0,0),'Dijous')
+#
+#
+# g2=Grup(2,[c4,c5,c6],'a1')
+#
+#
+# a1=Assignatura('a1',[g1,g2])
+#
+#
+#
+# g3=Grup(1,[c1,c2,c3],'a2')
+# g4=Grup(2,[c4,c5,c6],'a2')
+#
+# a2=Assignatura('a2',[g3,g4])
+# so= []
+# #print "HII"
+# #print type(so)
+# h1=donemhorari([a1,a2],generadorafuncions(5),[])
+#
+# (d1,j1) = mostrar_json(h1)
